@@ -1,0 +1,127 @@
+.signUpPage {
+    background-color: #EDEDED;
+  }
+
+.signUpForm {
+    background-color: #B7C7FF;
+    margin: 5rem;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.menuItem {
+    margin-right: 3rem;
+    color: #030303;
+    
+  }
+  
+  .navItem {
+    font: Inter;
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    vertical-align: super;
+    padding-top:0.2rem;
+  }
+  
+  .logo {
+     font-weight: 600;
+     font-size: xx-large;
+     font: Poppins;
+  }
+
+
+.formHeading {
+   font: Poppins;
+   font-size: 4rem;
+   font-weight: bold;
+}
+
+
+.nameInputs {
+    display:flex;
+    margin-bottom:1rem;
+}
+
+
+.form{
+    text-align: initial;
+    margin-top: 5rem;
+    margin-left: 12rem;
+    margin-right: 10rem;
+}
+
+.name {
+    flex:50%;
+    font: Poppins;
+    font-weight:bold;
+    margin-bottom:0.5rem;
+}
+
+.input {
+    flex:50%;
+    margin-top:0.5rem;
+}
+
+
+.nameInputField {
+    border-radius:0.5rem;
+    width: 90%;
+    border:none;
+    height:1.5rem;
+    margin-top:0.5rem;
+}
+
+.emailInputField {
+    border-radius:0.5rem;
+    width: 95%;
+    border:none;
+    height:1.5rem;
+    margin-top:0.5rem;
+    margin-bottom:1rem;
+}
+
+.dobInputField {
+    border-radius:0.5rem;
+    width: 95%;
+    border:none;
+    height:1.5rem;
+    margin-top:0.5rem;
+    margin-bottom:1rem;
+}
+
+.textBelow {
+    margin-top:1rem;
+}
+
+.login {
+    margin-left:0.5rem;
+    color: #3164F4;
+    font-weight:bold;
+}
+
+.footerSection {
+    margin-top:1rem;
+    display:flex;
+}
+
+.column {
+    width:20%;
+}
+
+.atIHR {
+    margin-top:1rem;
+    font-size:0.8rem;
+}
+
+.allRights {
+    font-size:0.8rem;
+}
+
+.footerText {
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #262626;
+    font-size:0.8rem;
+}

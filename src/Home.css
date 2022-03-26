@@ -1,0 +1,239 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.doc {
+ height:37.5rem;
+ width:45rem;
+}
+
+.laptop {
+  height:27rem;
+  width:29rem;
+}
+
+.docCheck {
+  height:23rem;
+  width:22.2rem;
+  padding-left:7rem;
+}
+
+.lightning {
+  height:19.5rem;
+  width:20.3rem;
+}
+
+.textSection {
+  flex:30%;
+  padding-top: 2rem;
+  margin-left: 3rem;
+}
+
+.specialTextSection {
+  flex:50%;
+}
+
+.stepEntryTextSection {
+  flex:30%;
+  padding-top:5rem;
+}
+
+.speedEntryTextSection{
+  flex:30%;
+  padding-top:2rem;
+  padding-left: 10%;
+  padding-right: 30%;
+}
+
+
+.specialHeading{
+  font: Poppins;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.stepEntryHeading {
+  font: Poppins;
+  font-weight: 600;
+  font-size:2rem;
+}
+
+.heading{
+  font: Poppins;
+  font-weight: 600;
+  font-size: 72px;
+}
+
+.subText{
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+
+.docImage {
+  padding-left: 10%;
+  flex:70%;
+}
+
+.capeDocImage {
+  padding-left: 5%;
+  flex:50%;
+}
+
+.laptopImage {
+  flex:70%
+}
+
+.capeDoc {
+  position: relative;
+  top: -12rem;
+  padding-left: 10rem;
+  height:30rem;
+}
+
+.buttonStyle{
+  background-color: #3164F4;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  
+}
+
+.specialBlock{
+  margin-top: 15rem;
+  margin-left:5rem;
+  margin-right:7rem;
+  background-color: white;
+  border-radius:1rem;
+  display:flex;
+  padding:4rem;
+  height: 16rem;
+  box-shadow: -9px 9px #f2f2f2;
+}
+
+.stepEntryBlock{
+  margin-top: 4rem;
+  margin-left:2rem;
+  margin-right:7rem;
+  display:flex;
+  padding:2rem;
+}
+
+
+.stepEntryTitle {
+  font-size: xx-small;
+  color: #7F7F7F;
+  font-weight: bold;
+  margin-bottom:0.5rem;
+}
+
+.IhrApp {
+  background-color: #EDEDED;
+}
+
+.mainContent {
+  margin:5rem;
+}
+
+.menuItem {
+  margin-right: 3rem;
+  color: #030303;
+  
+}
+
+.navItem {
+  font: Inter;
+  font-size: medium;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  vertical-align: super;
+  padding-top:0.2rem;
+}
+
+.logo {
+   font-weight: 600;
+   font-size: xx-large;
+   font: Poppins;
+}
+
+.mainHeading {
+  margin:2rem;
+  display:flex;
+}
+
+.footerSection {
+  margin-top:1rem;
+  display:flex;
+}
+
+.column {
+  width:20%;
+}
+
+.atIHR {
+  margin-top:1rem;
+  font-size:0.8rem;
+}
+
+.allRights {
+  font-size:0.8rem;
+}
+
+.footerText {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #262626;
+  font-size:0.8rem;
+}
+
+.getStartedBlock{
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  margin-left:5rem;
+  margin-right:7rem;
+  background-color: white;
+  border-radius:1rem;
+  display:flex;
+}
+
+.getStartedTextSection {
+  flex:60%;
+  padding:4rem;
+}
+
+.nursesGroup {
+  width:34rem;
+  height:26.5rem;
+  padding:0.5rem;
+  border-radius:1rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
