@@ -25,7 +25,7 @@ function Home() {
              <div className="heading">Your personalized Integrated Health Record</div>
              <div className="subText">An easier way to keep track of all your medical records</div>
              <div className="buttons">
-             <button className="buttonStyle">Log in</button>
+             <Link className="nav-link" to="/login"><button className="buttonStyle">Log in</button></Link>
             <Link className="nav-link" to="/signup"><button className="buttonStyle">Sign Up</button></Link>
              </div>
             </span>

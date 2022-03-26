@@ -1,8 +1,8 @@
-.signUpPage {
+.logInPage {
     background-color: #EDEDED;
   }
 
-.signUpForm {
+.logInForm {
     background-color: #B7C7FF;
     margin: 5rem;
     border-radius: 1rem;
@@ -92,7 +92,6 @@
 }
 
 .textBelow {
-    padding-right:1rem;
     margin-top:1rem;
 }
 

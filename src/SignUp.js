@@ -24,9 +24,10 @@ function SignUp() {
                    <div className="input"><label className="name" for="dob">Date of Birth</label><input  className="emailInputField" type="date" id="dob" name="dateOfBirth"></input></div>
                    <div className="input"><label className="name" for="password">Password</label> <input type="password" id="password" className="emailInputField" name="password"/></div>
             </div>
+            <button className="buttonStyle">Sign Up</button>
             <div className="textBelow">
-                <span>Existing user?  </span>
-                <span class="login">Log in</span>
+                <span>Existing user?</span>
+                <Link className="nav-link" to="/login"><span class="login">Log in</span></Link>
             </div>
         </div> 
         <hr/>

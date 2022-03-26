@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './Home';
 import SignUp from './SignUp';
+import LogIn from './LogIn';
 
 ReactDOM.render(
   // <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.render(
   <Routes>
     <Route exact path="/" element={<Home />} />
     <Route path="/signup" element={<SignUp />} />
+    <Route path="/login" element={<LogIn />} />
   </Routes>
 </Router>,
   document.getElementById('root')
