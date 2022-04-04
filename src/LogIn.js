@@ -16,10 +16,10 @@ function LogIn() {
         <div className="logInForm">
             <span className="formHeading">Log In</span>
             <div className="form">
-                    <div className="input"><label className="name" for="emailAddress">Email address</label> <input id="emailAddress" className="emailInputField" type="text" /></div>
-                    <div className="input"><label className="name" for="password">Password</label> <input type="password" id="password" className="emailInputField" name="password"/></div>
+                    <div className="input"><label className="name" htmlFor="emailAddress">Email address</label> <input id="emailAddress" className="emailInputField" type="text" /></div>
+                    <div className="input"><label className="name" htmlFor="password">Password</label> <input type="password" id="password" className="emailInputField" name="password"/></div>
             </div>
-            <button className="buttonStyle">Log in</button>
+            <button className="buttonStyle" onClick={loginClicked}>Log in</button>
         </div> 
         <hr/>
         <div className="footerSection">
@@ -41,5 +41,19 @@ function LogIn() {
     </div>
   );
 }
+
+function loginClicked() {
+    // Simple POST request with a JSON body using fetch
+   
+    let body = {"emailAddress" : document.getElementById("emailAddress").value, "password" : document.getElementById("password").value};
+    const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json'},
+        body: JSON.stringify(body)
+    };
+    fetch('https://integrated-health-records.herokuapp.com/login', requestOptions)
+        .then(response => response.json());
+        // .then(data => this.setState({ postId: data.id }));
+  }
 
 export default LogIn;

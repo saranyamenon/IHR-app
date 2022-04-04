@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from './Home';
 import SignUp from './SignUp';
 import LogIn from './LogIn';
+import EnterId from './EnterId';
 
 ReactDOM.render(
   // <React.StrictMode>
@@ -16,6 +17,7 @@ ReactDOM.render(
     <Route exact path="/" element={<Home />} />
     <Route path="/signup" element={<SignUp />} />
     <Route path="/login" element={<LogIn />} />
+    <Route path="/enterid" element={<EnterId />} />
   </Routes>
 </Router>,
   document.getElementById('root')
