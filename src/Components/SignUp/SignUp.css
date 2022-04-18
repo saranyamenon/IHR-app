@@ -10,13 +10,17 @@
     padding: 3rem;
 }
 
-.menuItem {
+.suMenuItem {
     margin-right: 3rem;
     color: #030303;
     
   }
+
+.suMainContent {
+    margin:5rem;
+  }
   
-  .navItem {
+.suNavItem {
     font: Inter;
     font-size: medium;
     font-weight: 600;
@@ -25,47 +29,47 @@
     padding-top:0.2rem;
   }
   
-  .logo {
+.suLogo {
      font-weight: 600;
      font-size: xx-large;
      font: Poppins;
-  }
+}
 
 
-.formHeading {
+.suFormHeading {
    font: Poppins;
    font-size: 4rem;
    font-weight: bold;
 }
 
 
-.nameInputs {
+.suNameInputs {
     display:flex;
     margin-bottom:1rem;
 }
 
 
-.form{
+.suForm{
     text-align: initial;
     margin-top: 5rem;
     margin-left: 12rem;
     margin-right: 10rem;
 }
 
-.name {
+.suName {
     flex:50%;
     font: Poppins;
     font-weight:bold;
     margin-bottom:0.5rem;
 }
 
-.input {
+.suInput {
     flex:50%;
     margin-top:0.5rem;
 }
 
 
-.nameInputField {
+.suNameInputField {
     border-radius:0.5rem;
     width: 90%;
     border:none;
@@ -73,7 +77,7 @@
     margin-top:0.5rem;
 }
 
-.emailInputField {
+.suEmailInputField {
     border-radius:0.5rem;
     width: 95%;
     border:none;
@@ -82,7 +86,7 @@
     margin-bottom:1rem;
 }
 
-.dobInputField {
+.suDobInputField {
     border-radius:0.5rem;
     width: 95%;
     border:none;
@@ -91,43 +95,57 @@
     margin-bottom:1rem;
 }
 
-.textBelow {
+.suButtonStyle{
+    background-color: #3164F4;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    
+  }
+
+.suTextBelow {
     padding-right:1rem;
     margin-top:1rem;
 }
 
-.login {
+.suLogin {
     margin-left:0.5rem;
     color: #3164F4;
     font-weight:bold;
 }
 
-.footerSection {
+.suFooterSection {
     margin-top:1rem;
     display:flex;
 }
 
-.column {
+.suColumn {
     width:20%;
 }
 
-.atIHR {
+.suAtIHR {
     margin-top:1rem;
     font-size:0.8rem;
 }
 
-.allRights {
+.suAllRights {
     font-size:0.8rem;
 }
 
-.footerText {
+.suFooterText {
     font-weight: bold;
     margin-top: 1rem;
     color: #262626;
     font-size:0.8rem;
 }
 
-.errorMessage {
+.suErrorMessage {
     display:none;
     color: red;
     font-style: italic;

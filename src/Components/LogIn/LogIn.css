@@ -10,13 +10,13 @@
     padding: 3rem;
 }
 
-.menuItem {
+.lmenuItem {
     margin-right: 3rem;
     color: #030303;
     
   }
   
-  .navItem {
+  .lnavItem {
     font: Inter;
     font-size: medium;
     font-weight: 600;
@@ -25,47 +25,51 @@
     padding-top:0.2rem;
   }
   
-  .logo {
+  .llogo {
      font-weight: 600;
      font-size: xx-large;
      font: Poppins;
   }
 
 
-.formHeading {
+.lformHeading {
    font: Poppins;
    font-size: 4rem;
    font-weight: bold;
 }
 
 
-.nameInputs {
+.lnameInputs {
     display:flex;
     margin-bottom:1rem;
 }
 
 
-.form{
+.lform{
     text-align: initial;
     margin-top: 5rem;
     margin-left: 12rem;
     margin-right: 10rem;
 }
 
-.name {
+.lname {
     flex:50%;
     font: Poppins;
     font-weight:bold;
     margin-bottom:0.5rem;
 }
 
-.input {
+.linput {
     flex:50%;
     margin-top:0.5rem;
 }
 
+.lmainContent {
+    margin:5rem;
+  }
 
-.nameInputField {
+
+.lnameInputField {
     border-radius:0.5rem;
     width: 90%;
     border:none;
@@ -73,7 +77,21 @@
     margin-top:0.5rem;
 }
 
-.emailInputField {
+.lbuttonStyle{
+    background-color: #3164F4;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    
+  }
+
+.lemailInputField {
     border-radius:0.5rem;
     width: 95%;
     border:none;
@@ -82,7 +100,7 @@
     margin-bottom:1rem;
 }
 
-.dobInputField {
+.ldobInputField {
     border-radius:0.5rem;
     width: 95%;
     border:none;
@@ -91,7 +109,7 @@
     margin-bottom:1rem;
 }
 
-.textBelow {
+.ltextBelow {
     margin-top:1rem;
 }
 
@@ -101,25 +119,25 @@
     font-weight:bold;
 }
 
-.footerSection {
+.lfooterSection {
     margin-top:1rem;
     display:flex;
 }
 
-.column {
+.lcolumn {
     width:20%;
 }
 
-.atIHR {
+.latIHR {
     margin-top:1rem;
     font-size:0.8rem;
 }
 
-.allRights {
+.lallRights {
     font-size:0.8rem;
 }
 
-.footerText {
+.lfooterText {
     font-weight: bold;
     margin-top: 1rem;
     color: #262626;

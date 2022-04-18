@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from './Home';
-import SignUp from './SignUp';
-import LogIn from './LogIn';
-import EnterId from './EnterId';
+import Home from './Components/Home/Home';
+import SignUp from './Components/SignUp/SignUp';
+import LogIn from './Components/LogIn/LogIn';
+import EnterId from './Components/EnterId/EnterId';
+import IntegratedRecord from './Components/IntegratedRecord/IntegratedRecord';
+import AboutUs from './Components/AboutUs/AboutUs';
 
 ReactDOM.render(
   // <React.StrictMode>
@@ -18,6 +20,8 @@ ReactDOM.render(
     <Route path="/signup" element={<SignUp />} />
     <Route path="/login" element={<LogIn />} />
     <Route path="/enterid" element={<EnterId />} />
+    <Route path="/integratedRecord" element={<IntegratedRecord />} />
+    <Route path="/aboutus" element={<AboutUs />} />
   </Routes>
 </Router>,
   document.getElementById('root')

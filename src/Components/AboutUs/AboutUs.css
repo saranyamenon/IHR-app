@@ -1,0 +1,217 @@
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .auTask {
+   height:20rem;
+   width:20rem;
+  }
+
+  .auAvatars {
+    display:flex;
+  }
+  
+  .panda{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin:2rem;
+  }
+
+  .cat{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin:2rem;
+  }
+
+  .dog{
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin:2rem;
+  }
+
+  .auAvatars {
+    padding-left:19rem;
+    padding-top:4rem;
+  }
+
+  .auTextSection {
+    flex:30%;
+    padding-top: 2rem;
+    margin-left: 3rem;
+  }
+  
+  
+  .auHeading{
+    font: Poppins;
+    font-weight: 600;
+    font-size: 48px;
+    text-align:center;
+  }
+  
+  .auSubText{
+    font: Inter;
+    padding-top: 2rem;
+    font-size: 1.25rem;
+    margin-right: 24rem;
+    margin-left: 24rem;
+    text-align:center;
+  }
+
+  .auMissionSubText{
+    font: Inter;
+    padding-top: 2rem;
+    font-size: 1.25rem;
+    margin-right: 24rem;
+    margin-left: 24rem;
+    text-align:center;
+    margin-bottom:3rem;
+  }
+
+  .auFriends {
+    height:34rem;
+    width:36rem;
+  }
+  
+  .auFriendsContainer {
+   padding-left:24rem;
+  }
+
+  .auInputs {
+      padding-top:2rem;
+  }
+  
+  .auButtonStyle{
+    background-color: #3164F4;
+    color: white;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-right: 1rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    
+  }
+  
+  .auIhrApp {
+    background-color: #EDEDED;
+  }
+  
+  .auMainContent {
+    margin:5rem;
+  }
+  
+  .auMenuItem {
+    margin-right: 3rem;
+    color: #030303;
+    
+  }
+  
+  .auNavItem {
+    font: Inter;
+    font-size: medium;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    vertical-align: super;
+    padding-top:0.2rem;
+  }
+  
+  .auLogo {
+     font-weight: 600;
+     font-size: xx-large;
+     font: Poppins;
+  }
+  
+  .auMainHeading {
+    margin:2rem;
+    display:flex;
+    margin-bottom:0;
+  }
+
+  .auEhrInputField {
+    border-radius:0.5rem;
+    width: 95%;
+    border:groove;
+    height:1.5rem;
+    margin-top:0.5rem;
+    margin-bottom:2rem;
+    padding-left:1rem;
+  }
+  
+  .auFooterSection {
+    margin-top:1rem;
+    display:flex;
+  }
+  
+  .auColumn {
+    width:20%;
+  }
+  
+  .auAtIHR {
+    margin-top:1rem;
+    font-size:0.8rem;
+  }
+  
+  .auAllRights {
+    font-size:0.8rem;
+  }
+
+  .auAvatarLabels {
+    font-weight: 600;
+    text-align: center;
+    padding-left: 2rem;
+  }
+
+  .avatarLabel {
+    padding:4rem;
+    font-weight:600;
+  }
+  
+
+  .avatarName {
+    padding:3rem;
+    font-weight:200;
+  }
+  
+  .auFooterText {
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #262626;
+    font-size:0.8rem;
+  }
+
+  .auErrorMessage {
+    display:none;
+    color: red;
+    font-style: italic;
+}
+  
+
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

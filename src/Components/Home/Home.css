@@ -34,22 +34,22 @@
   width:20.3rem;
 }
 
-.textSection {
+.htextSection {
   flex:30%;
   padding-top: 2rem;
   margin-left: 3rem;
 }
 
-.specialTextSection {
+.hspecialTextSection {
   flex:50%;
 }
 
-.stepEntryTextSection {
+.hstepEntryTextSection {
   flex:30%;
   padding-top:5rem;
 }
 
-.speedEntryTextSection{
+.hspeedEntryTextSection{
   flex:30%;
   padding-top:2rem;
   padding-left: 10%;
@@ -57,25 +57,25 @@
 }
 
 
-.specialHeading{
+.hspecialHeading{
   font: Poppins;
   font-weight: 600;
   font-size: 3rem;
 }
 
-.stepEntryHeading {
+.hstepEntryHeading {
   font: Poppins;
   font-weight: 600;
   font-size:2rem;
 }
 
-.heading{
+.hheading{
   font: Poppins;
   font-weight: 600;
   font-size: 72px;
 }
 
-.subText{
+.hsubText{
   padding-top: 1rem;
   font-size: 1rem;
 }
@@ -102,7 +102,7 @@
   height:30rem;
 }
 
-.buttonStyle{
+.hbuttonStyle{
   background-color: #3164F4;
   color: white;
   padding-top: 0.5rem;
@@ -116,7 +116,7 @@
   
 }
 
-.specialBlock{
+.hspecialBlock{
   margin-top: 15rem;
   margin-left:5rem;
   margin-right:7rem;
@@ -128,7 +128,7 @@
   box-shadow: -9px 9px #f2f2f2;
 }
 
-.stepEntryBlock{
+.hstepEntryBlock{
   margin-top: 4rem;
   margin-left:2rem;
   margin-right:7rem;
@@ -137,28 +137,28 @@
 }
 
 
-.stepEntryTitle {
+.hstepEntryTitle {
   font-size: xx-small;
   color: #7F7F7F;
   font-weight: bold;
   margin-bottom:0.5rem;
 }
 
-.IhrApp {
+.hIhrApp {
   background-color: #EDEDED;
 }
 
-.mainContent {
+.hmainContent {
   margin:5rem;
 }
 
-.menuItem {
+.hmenuItem {
   margin-right: 3rem;
   color: #030303;
   
 }
 
-.navItem {
+.hnavItem {
   font: Inter;
   font-size: medium;
   font-weight: 600;
@@ -167,43 +167,43 @@
   padding-top:0.2rem;
 }
 
-.logo {
+.hlogo {
    font-weight: 600;
    font-size: xx-large;
    font: Poppins;
 }
 
-.mainHeading {
+.hmainHeading {
   margin:2rem;
   display:flex;
 }
 
-.footerSection {
+.hfooterSection {
   margin-top:1rem;
   display:flex;
 }
 
-.column {
+.hcolumn {
   width:20%;
 }
 
-.atIHR {
+.hatIHR {
   margin-top:1rem;
   font-size:0.8rem;
 }
 
-.allRights {
+.hallRights {
   font-size:0.8rem;
 }
 
-.footerText {
+.hfooterText {
   font-weight: bold;
   margin-top: 1rem;
   color: #262626;
   font-size:0.8rem;
 }
 
-.getStartedBlock{
+.hgetStartedBlock{
   margin-top: 15rem;
   margin-bottom: 5rem;
   margin-left:5rem;
@@ -213,7 +213,7 @@
   display:flex;
 }
 
-.getStartedTextSection {
+.hgetStartedTextSection {
   flex:60%;
   padding:4rem;
 }

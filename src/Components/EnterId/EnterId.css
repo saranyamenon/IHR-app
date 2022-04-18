@@ -13,42 +13,42 @@
     }
   }
   
-  .task {
+  .eiTask {
    height:20rem;
    width:20rem;
   }
 
   
-  .textSection {
+  .eiTextSection {
     flex:30%;
     padding-top: 2rem;
     margin-left: 3rem;
   }
   
   
-  .heading{
+  .eiHeading{
     font: Poppins;
     font-weight: 600;
     font-size: 72px;
   }
   
-  .subText{
+  .eiSubText{
     padding-top: 1rem;
     font-size: 2rem;
   }
   
   
-  .taskImage {
+  .eiTaskImage {
     padding-left: 25%;
     padding-top:5%;
     flex:20%;
   }
   
-  .inputs {
+  .eiInputs {
       padding-top:2rem;
   }
   
-  .buttonStyle{
+  .eiButtonStyle{
     background-color: #3164F4;
     color: white;
     padding-top: 0.5rem;
@@ -62,21 +62,21 @@
     
   }
   
-  .IhrApp {
+  .eiIhrApp {
     background-color: #EDEDED;
   }
   
-  .mainContent {
+  .eiMainContent {
     margin:5rem;
   }
   
-  .menuItem {
+  .eiMenuItem {
     margin-right: 3rem;
     color: #030303;
     
   }
   
-  .navItem {
+  .eiNavItem {
     font: Inter;
     font-size: medium;
     font-weight: 600;
@@ -85,19 +85,19 @@
     padding-top:0.2rem;
   }
   
-  .logo {
+  .eiLogo {
      font-weight: 600;
      font-size: xx-large;
      font: Poppins;
   }
   
-  .mainHeading {
+  .eiMainHeading {
     margin:2rem;
     display:flex;
     padding-bottom:4rem;
   }
 
-  .ehrInputField {
+  .eiEhrInputField {
     border-radius:0.5rem;
     width: 95%;
     border:groove;
@@ -107,30 +107,36 @@
     padding-left:1rem;
   }
   
-  .footerSection {
+  .eiFooterSection {
     margin-top:1rem;
     display:flex;
   }
   
-  .column {
+  .eiColumn {
     width:20%;
   }
   
-  .atIHR {
+  .eiAtIHR {
     margin-top:1rem;
     font-size:0.8rem;
   }
   
-  .allRights {
+  .eiAllRights {
     font-size:0.8rem;
   }
   
-  .footerText {
+  .eiFooterText {
     font-weight: bold;
     margin-top: 1rem;
     color: #262626;
     font-size:0.8rem;
   }
+
+  .eiErrorMessage {
+    display:none;
+    color: red;
+    font-style: italic;
+}
   
 
   .App-link {
