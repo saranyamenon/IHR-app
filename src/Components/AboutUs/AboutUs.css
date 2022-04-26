@@ -51,7 +51,6 @@
   .auTextSection {
     flex:30%;
     padding-top: 2rem;
-    margin-left: 3rem;
   }
   
   
@@ -87,7 +86,7 @@
   }
   
   .auFriendsContainer {
-   padding-left:24rem;
+   text-align:center;
   }
 
   .auInputs {
@@ -178,13 +177,13 @@
   }
 
   .avatarLabel {
-    padding:4rem;
+    text-align: center;
     font-weight:600;
   }
   
 
   .avatarName {
-    padding:3rem;
+    text-align: center;
     font-weight:200;
   }
   

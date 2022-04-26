@@ -12,8 +12,8 @@ function EnterId() {
         <div className="eiNavMenu">
             <span className="eiMenuItem eiLogo">IHR</span>
             <Link className="nav-link" to="/"><span className="eiMenuItem eiNavItem">Home</span></Link>
-            <span className="eiMenuItem eiNavItem">About Us</span>
-            <span className="eiMenuItem eiNavItem">Contact</span>
+            <Link className="nav-link" to="/aboutus"><span className="eiMenuItem eiNavItem">About Us</span></Link>
+            
         </div>
         <div className="eiMainHeading">
            <span className="eiTextSection">

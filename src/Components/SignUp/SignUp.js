@@ -13,8 +13,8 @@ function SignUp() {
         <div className="suNavMenu">
             <span className="suMenuItem suLogo">IHR</span>
             <Link className="nav-link" to="/"><span className="suMenuItem suNavItem">Home</span></Link>
-            <span className="suMenuItem suNavItem">About Us</span>
-            <span className="suMenuItem suNavItem">Contact</span>
+            <Link className="nav-link" to="/aboutus"><span className="suMenuItem suNavItem">About Us</span></Link>
+          
         </div>
         <div className="signUpForm">
             <span className="suFormHeading">Sign Up</span>

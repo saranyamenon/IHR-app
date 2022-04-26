@@ -17,7 +17,6 @@ function AboutUs() {
             <span className="auMenuItem auLogo">IHR</span>
             <Link className="nav-link" to="/"><span className="auMenuItem auNavItem">Home</span></Link>
             <span className="auMenuItem auNavItem">About Us</span>
-            <span className="auMenuItem auNavItem">Contact</span>
         </div>
         <div className="auMainHeading">
            <span className="auTextSection">
@@ -43,19 +42,21 @@ Today's healthcare sector struggles with providing clinicians all the informatio
              
             </span>
           <div className="auAvatars">
-            <img src={panda} className="panda" alt="panda"/>
-            <img src={dog} className="dog" alt="dog"/>
-            <img src={cat} className="cat" alt="cat"/>
-           </div>
-           <div className="auAvatarLabels">
-            <span className="avatarLabel">Tejas Bhuwania</span>
-            <span className="avatarLabel">Kevin George</span>
-            <span className="avatarLabel">Saranya Arun Menon</span>
-           </div>
-           <div className="auAvatarLabels">
-            <span className="avatarName">Technical Developer</span>
-            <span className="avatarName">Technical Developer</span>
-            <span className="avatarName">Technical Developer</span>
+            <span>
+              <img src={panda} className="panda" alt="panda"/>
+              <div className="avatarLabel">Tejas Bhuwania </div>
+              <div className="avatarName">Technical Developer</div>
+            </span>
+            <span>
+              <img src={dog} className="dog" alt="dog"/>
+              <div className="avatarLabel">Kevin George</div>
+              <div className="avatarName">Technical Developer</div>
+            </span>
+            <span>
+              <img src={cat} className="cat" alt="cat"/>
+              <div className="avatarLabel">Saranya Arun Menon </div>
+              <div className="avatarName">Technical Developer</div>
+            </span>
            </div>
 
 

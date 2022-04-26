@@ -18,7 +18,6 @@ function Home() {
             <span className="hmenuItem hlogo">IHR</span>
             <span className="hmenuItem hnavItem">Home</span>
             <Link className="nav-link" to="/aboutus"><span className="hmenuItem hnavItem">About Us</span></Link> 
-            <span className="hmenuItem hnavItem">Contact</span>
         </div>
         <div className="hmainHeading">
            <span className="htextSection">

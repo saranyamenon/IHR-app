@@ -34,14 +34,69 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
-  .irRecordColumn {
+
+  .irConditionTag {
+    font-size: small;
+    color: white;
+    padding-top: 0.3rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-weight:bold;
+  }
+
+  .irRecordColumnOne {
     flex:30%;
-    background-color: #D9E4FB;
-    padding: 1rem;
     margin-right: 2rem;
+  }
+
+  .irColumnOneCard {
+    background-color: #D9E4FB;
     border-radius: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
+
+  .irRecordColumnTwo {
+    flex:30%;
+    margin-right: 2rem;
+  }
+
+  .irColumnTwoCard {
+    background-color: #F7DAE8;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
+    padding:1rem;
+  }
+
+  .irRecordColumnThree {
+    flex:30%;
+    margin-right: 2rem;
+  }
+
+  .irColumnThreeCard {
+    background-color: #D6ECD2;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+
+  .irRecordTextSub {
+    font-size: small;
+    color: grey;
+  }
+
+  .irCardHeading {
+    font-weight: bold;
+    font-size: x-large;
+    padding:1rem;
+  }
+
 
   .irRecordText {
     font-weight: bold;

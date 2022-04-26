@@ -7,6 +7,10 @@ import './IntegratedRecord.css';
 
 function IntegratedRecord() {
   let [patient, setPatient] = useState("");
+  let [observation, setObservation] = useState("");
+  let [allergies, setAllergies] = useState("");
+  let [procedure, setProcedure] = useState("");
+  let [medication, setMedication] = useState("");
 
   useEffect(() => {
     let mounted = true;  
@@ -15,8 +19,8 @@ function IntegratedRecord() {
         method: 'GET',
         headers: { 'Content-Type': 'application/json' }
     };
-    if(mounted && !patient){
-      fetch('https://integrated-health-records.herokuapp.com/mergeRecord', requestOptions).then(function(response){
+    if(mounted && !patient && !observation){
+      fetch('https://integrated-health-records.herokuapp.com/mergeRecordPatient', requestOptions).then(function(response){
        
         response.json().then(function(data) {
           setPatient(data);
@@ -26,7 +30,56 @@ function IntegratedRecord() {
         })
         
       });
+
+      fetch('https://integrated-health-records.herokuapp.com/mergeRecordObservation', requestOptions).then(function(response){
+       
+        response.json().then(function(data) {
+          setObservation(data);
+          
+    
+  
+        })
+        
+      });
+
+      fetch('https://integrated-health-records.herokuapp.com/mergeRecordAllergies', requestOptions).then(function(response){
+       
+        response.json().then(function(data) {
+          console.log(data);
+          setAllergies(data);
+          
+    
+        })
+        
+      });
+
+
+      fetch('https://integrated-health-records.herokuapp.com/mergeRecordProcedures', requestOptions).then(function(response){
+       
+        response.json().then(function(data) {
+          console.log(data);
+          setProcedure(data);
+          
+    
+        })
+        
+      });
+
+      fetch('https://integrated-health-records.herokuapp.com/mergeRecordMedication', requestOptions).then(function(response){
+       
+        response.json().then(function(data) {
+          console.log(data);
+          setMedication(data);
+          
+    
+        })
+        
+      });
+
+
+
      }
+     
     };
 
     fetchData();
@@ -69,6 +122,54 @@ function IntegratedRecord() {
     document.getElementById("maritalStatus").innerHTML = patient.maritalStatus.coding[0].display;
   }
 
+  if(observation) {
+    let cardHeading  = document.createElement("div");
+    cardHeading.className = "irCardHeading";
+    cardHeading.innerHTML = "OBSERVATIONS";
+    document.getElementById("columnTwo").appendChild(cardHeading);
+
+
+    console.log(observation.observation);
+    let cardElement  = document.createElement("div");
+    cardElement.id = "irResourceCard";
+    cardElement.className = "irColumnTwoCard";
+    document.getElementById("columnTwo").appendChild(cardElement);
+    
+    for(let i=0;i<observation.observation.coding.length;i++) {
+      
+      let elementLabel = document.createElement("div");
+      elementLabel.className = "irSubText";
+      elementLabel.innerHTML = observation.observation.coding[i].display;
+      document.getElementById("irResourceCard").appendChild(elementLabel);
+
+      let elementValue = document.createElement("div");
+      elementValue.className = "irRecordText";
+      elementValue.innerHTML = observation.observation.coding[i].value + " (" + observation.observation.coding[i].unit + ")";
+      document.getElementById("irResourceCard").appendChild(elementValue);
+     
+    }
+
+  }
+
+  if(allergies) {
+
+    let elementTag = document.createElement("span");
+    elementTag.className = "irConditionTag";
+    elementTag.innerHTML = allergies.criticality;
+    switch(allergies.criticality){
+        case 'High' : elementTag.style.backgroundColor = "red";
+                      break;
+        case 'Medium' : elementTag.style.backgroundColor = "orange";
+                      break;
+        case 'Low' : elementTag.style.backgroundColor = "green";
+                      break;
+
+        default: ;
+    }
+     document.getElementById("irCondition").appendChild(elementTag);
+  }
+
+
     return () => mounted = false;
 
   },[patient]);
@@ -78,8 +179,8 @@ function IntegratedRecord() {
         <div className="irNavMenu">
             <span className="irMenuItem irLogo">IHR</span>
             <Link className="nav-link" to="/"><span className="irMenuItem irNavItem">Home</span></Link>
-            <span className="irMenuItem irNavItem">About Us</span>
-            <span className="irMenuItem irNavItem">Contact</span>
+            <Link className="nav-link" to="/aboutus"><span className="irMenuItem irNavItem">About Us</span></Link>
+            
         </div>
         <div className="irMainHeading">
            <span className="irTextSection">
@@ -87,7 +188,9 @@ function IntegratedRecord() {
             </span>
         </div>
         <div className = "irRecord">
-          <div className="irRecordColumn">
+          <div id="columnOne" className="irRecordColumnOne">
+          <div className = "irCardHeading">PATIENT</div>
+            <div className="irColumnOneCard">
              <div className="irSubText">Patient Name</div>
              <div id="patientName">
                <div className="irName"  id="name">
@@ -114,42 +217,50 @@ function IntegratedRecord() {
              <div className="irRecordText">John Doe</div>
              <div className="irSubText">Emergency Contact No.</div>
              <div className="irRecordText">35467876</div>
+             </div>
            </div>  
-           <div className="irRecordColumn">
-             <div className="irSubText">Patient Name</div>
-             <div className="irRecordText">Sam Smith</div>
-             <div className="irSubText">Date of Birth</div>
-             <div className="irRecordText">10/13/1972</div>
-             <div className="irSubText">Gender</div>
-             <div className="irRecordText">Male</div>
-             <div className="irSubText">Marital Status</div>
-             <div className="irRecordText">N/A</div>
-             <div className="irSubText">Address</div>
-             <div className="irRecordText">699 Spring St NW, Atlanta, GA, 30308</div>
-             <div className="irSubText">Contact No.</div>
-             <div className="irRecordText">12345678</div>
-             <div className="irSubText">Emergency Contact Name</div>
-             <div className="irRecordText">John Doe</div>
-             <div className="irSubText">Emergency Contact No.</div>
-             <div className="irRecordText">35467876</div>
+           <div id="columnTwo" className="irRecordColumnTwo">
+           <div className = "irCardHeading">ALLERGIES</div>
+           <div className = "irColumnTwoCard">
+            
+           <div className="irSubText">Condition</div>
+           <div id="irCondition" className="irName">
+              <span className="irRecordText">{allergies.manifestation}</span>
+           </div>
+           <div className="irSubText">Medication</div>
+           <div className="irRecordText">{allergies.medicine}</div>
+           </div>
            </div> 
-           <div className="irRecordColumn">
-           <div className="irSubText">Patient Name</div>
-             <div className="irRecordText">Sam Smith</div>
-             <div className="irSubText">Date of Birth</div>
-             <div className="irRecordText">10/13/1972</div>
-             <div className="irSubText">Gender</div>
-             <div className="irRecordText">Male</div>
-             <div className="irSubText">Marital Status</div>
-             <div className="irRecordText">N/A</div>
-             <div className="irSubText">Address</div>
-             <div className="irRecordText">699 Spring St NW, Atlanta, GA, 30308</div>
-             <div className="irSubText">Contact No.</div>
-             <div className="irRecordText">12345678</div>
-             <div className="irSubText">Emergency Contact Name</div>
-             <div className="irRecordText">John Doe</div>
-             <div className="irSubText">Emergency Contact No.</div>
-             <div className="irRecordText">35467876</div>
+           <div id="columnThree" className="irRecordColumnThree">
+           <div className = "irCardHeading">PROCEDURES</div>
+           <div className = "irColumnThreeCard">
+            
+           <div className="irSubText">Body Site</div>
+           <div id="irCondition" className="irName">
+              <span className="irRecordText">{procedure.bodySite}</span>
+           </div>
+           <div className="irSubText">Doctor</div>
+           <div className="irRecordText">{procedure.doctor_name}</div>
+           <div className = "irRecordTextSub">{procedure.doctor_display}</div>
+           <div className="irSubText">Date</div>
+           <div className="irRecordText">{procedure.encounter}</div>
+           <div className="irSubText">Status</div>
+           <div className="irRecordText">{procedure.status}</div>
+           </div>
+
+           <div className = "irCardHeading">MEDICATIONS</div>
+           <div className = "irColumnThreeCard">
+            
+            <div className="irSubText">Type</div>
+            <div id="irCondition" className="irName">
+               <span className="irRecordText">{medication.form}</span>
+            </div>
+            <div className="irSubText">Ingredient</div>
+            <div className="irRecordText">{medication.ingredient}</div>
+            <div className="irSubText">Strength</div>
+            <div className="irRecordText">{medication.strength}</div>
+            
+            </div>
            </div> 
         </div>
        
@@ -177,22 +288,9 @@ function IntegratedRecord() {
   );
 }
 
-function fetchData() {
-  
-  const requestOptions = {
-    method: 'GET',
-    headers: { 'Content-Type': 'application/json' }
-};
-  fetch('https://integrated-health-records.herokuapp.com/mergeRecord', requestOptions).then(function(response){
-   
-    response.json().then(function(data) {
-       console.log(data);
-       
-      })
-    
-  });
-  // .then(data => this.setState({ postId: data.id }));
-}
+
+
+
 
 
 export default IntegratedRecord;

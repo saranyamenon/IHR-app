@@ -8,10 +8,10 @@ function LogIn() {
     <div className="logInPage">
      <div className = "lmainContent">
         <div className="lnavMenu">
-            <span className="lmenuItem logo">IHR</span>
+            <span className="lmenuItem llogo">IHR</span>
             <Link className="lnav-link" to="/"><span className="lmenuItem lnavItem">Home</span></Link>
-            <span className="lmenuItem lnavItem">About Us</span>
-            <span className="lmenuItem lnavItem">Contact</span>
+            <Link className="nav-link" to="/aboutus"><span className="lmenuItem lnavItem">About Us</span></Link>
+           
         </div>
         <div className="logInForm">
             <span className="lformHeading">Log In</span>
@@ -51,8 +51,19 @@ function loginClicked() {
         headers: { 'Content-Type': 'application/json'},
         body: JSON.stringify(body)
     };
-    fetch('https://integrated-health-records.herokuapp.com/login', requestOptions)
-        .then(response => response.json());
+    fetch('https://integrated-health-records.herokuapp.com/login', requestOptions).then(function(response){
+          response.json().then(function(data) {
+            console.log(data);
+            //  if(data === "Error!"){
+            //    document.getElementById("error").innerHTML = data;
+            //    document.getElementById("error").style.display = "block";
+            //  }
+             if(data === "Success"){
+               window.location.replace("/enterid");
+             }
+            })
+          
+        });
         // .then(data => this.setState({ postId: data.id }));
   }
 
