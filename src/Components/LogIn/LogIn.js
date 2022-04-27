@@ -16,6 +16,7 @@ function LogIn() {
         <div className="logInForm">
             <span className="lformHeading">Log In</span>
             <div className="lform">
+                     <div className="lErrorMessage" id="error">Please complete required fields</div>
                     <div className="linput"><label className="lname" htmlFor="emailAddress">Email address</label> <input id="emailAddress" className="lemailInputField" type="text" /></div>
                     <div className="linput"><label className="lname" htmlFor="password">Password</label> <input type="password" id="password" className="lemailInputField" name="password"/></div>
             </div>
@@ -44,7 +45,12 @@ function LogIn() {
 
 function loginClicked() {
     // Simple POST request with a JSON body using fetch
-   
+    if(document.getElementById("emailAddress").value === "" || document.getElementById("password").value === "") {
+      document.getElementById("error").innerHTML = "Please complete required fields";  
+      document.getElementById("error").style.display = "block";
+    }
+    else {
+    document.getElementById("error").style.display = "none";
     let body = {"emailAddress" : document.getElementById("emailAddress").value, "password" : document.getElementById("password").value};
     const requestOptions = {
         method: 'POST',
@@ -54,16 +60,17 @@ function loginClicked() {
     fetch('https://integrated-health-records.herokuapp.com/login', requestOptions).then(function(response){
           response.json().then(function(data) {
             console.log(data);
-            //  if(data === "Error!"){
-            //    document.getElementById("error").innerHTML = data;
-            //    document.getElementById("error").style.display = "block";
-            //  }
-             if(data === "Success"){
+             if(data === "Error! Incorrect email id and password"){
+               document.getElementById("error").innerHTML = data;
+               document.getElementById("error").style.display = "block";
+             }
+             else if(data === "Success"){
                window.location.replace("/enterid");
              }
             })
           
         });
+      }
         // .then(data => this.setState({ postId: data.id }));
   }
 

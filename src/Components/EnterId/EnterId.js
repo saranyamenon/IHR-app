@@ -69,8 +69,11 @@ function SubmitClicked() {
     };
     fetch('https://integrated-health-records.herokuapp.com/merge', requestOptions).then(function(response){
           response.json().then(function(data) {
-             //console.log(data);
-              if(data === "Success"){
+            if(data === "Error: Different patients cannot be merged"){
+              document.getElementById("error").innerHTML = data;
+              document.getElementById("error").style.display = "block";
+            }
+            else if(data === "Success"){
                window.location.replace("/integratedRecord");
                
              }
